@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    form {
+        width: 600px;
+        padding: 10px;
+    }
+    .button-container {
+            margin-top: 0;       /*Menambahkan ruang atas*/
+        }
+    label {
+        display: inline;
+    }
+    form div {
+        margin: 10px;
+    }
+</style>
+<body>
+    <form method="post" action="proses_pendaftaran.php">
+            <div>
+                <label for="nim">Nim:</label>
+                <input type="nim" id="nim" name="nim">
+            </div>
+            <div>
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="ttl">Tempat, Tanggal Lahir:</label>
+                <input type="text" id="tempat" name="tempat">
+                <input type="date" id="ttl" name="ttl">
+            </div>
+            <div>
+                <label for="alamat">Alamat:</label>
+                <input type="alamat" id="alamat" name="alamat">
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="Laki-laki">
+                <label for="laki_laki">Laki-laki</label>
+                <input type="radio" name="gender" value="Perempuan">
+                <label for="Perempuan">Perempuan</label>
+            </div>
+            <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
