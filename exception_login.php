@@ -32,8 +32,8 @@ try {
         // Jika tidak ada error, cek username dan password
         if (empty($nameErr) && empty($passwordErr)) {
             // Periksa username dan password, misalnya cek ke database
-            $username_dari_database = "admin"; // Ganti dengan username yang sesuai
-            $password_dari_database = "password"; // Ganti dengan password yang sesuai
+            $username_dari_database = "root"; // Ganti dengan username yang sesuai
+            $password_dari_database = "12345"; // Ganti dengan password yang sesuai
             
             if ($name === $username_dari_database && $password === $password_dari_database) {
                 // Jika username dan password cocok, atur session dan redirect ke halaman setelah login
